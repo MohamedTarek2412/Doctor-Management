@@ -303,7 +303,7 @@ button:hover {
     color:#030431;
 }
 #ContactUs .continer .left p{
-    font-weight:800;
+    font-weight:400;
 
 }
 #ContactUs .contact-info {
@@ -321,6 +321,7 @@ button:hover {
 
 #ContactUs .contact-info h3 {
     font-size: 25px;
+    font-weight:1000;
 }
 
 
@@ -353,6 +354,11 @@ button:hover {
     .container {
         width: 750px;
     }
+    header{
+        max-width:100%;
+        height:auto;
+        object-fit:cover;
+    }
     
 }
 
@@ -384,7 +390,112 @@ button:hover {
     }
 }
 
-/* Ens globel rules */
 
 
-/* Ens globel rules */
+
+/* Ensd global rules */
+@media (max-width: 768px) {
+    header .review h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .feedback-container {
+        flex-direction: column;
+    }
+
+    .feedback-form, .feedback-image {
+        flex: 1 1 100%;
+    }
+
+    .contact-info .left, .contact-info .right {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    header .review h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-img-container {
+        height: 150px;
+    }
+
+    
+    .container #navbar nav ul a{
+         padding:0 5px;
+        font-size:7px;
+    }
+    .container #navbar nav ul{
+        margin-left:295px;
+        display:flex;
+       flex-direction:row;
+    }
+    .nav ul {
+        width:500px;
+    }
+    #navbar ul img {
+        margin-left:-37px;
+        position:absolute;
+        width:37px;
+    }
+    .nav ul img{
+        height:40px;
+    }
+    .review h1 {
+        font-size: 20px;
+    }
+    .container .row {
+        display:flex;
+        flex-direction:column;
+    }
+    .container .row .col-4 .card{
+        width:10rem;
+        margin:10px 0;
+    }
+    .feedback-container .feedback-image img{
+        width: 199px;
+        height: 531px;
+        margin-left: -13px;
+        margin-top: 69px;
+    }
+    #ContactUs .contact-info{
+        display:flex;
+        flex-direction:column-reverse;
+       
+    }
+    #ContactUs .contact-info .left {
+        margin-right: -15px;
+        margin-top:10px;
+    }
+    
+    #ContactUs .contact-info .right {
+        margin-left: 25px;
+    }
+    
+    #ContactUs .contact-info h3 {
+        font-size: 20px;
+    }
+    #ContactUs .continer .left p{
+        font-size:15px;
+    
+    }
+    table{
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+                width:345px;
+                margin:0 20px;
+    }
+    
+}
